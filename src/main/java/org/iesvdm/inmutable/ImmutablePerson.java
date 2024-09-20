@@ -39,6 +39,17 @@ package org.iesvdm.inmutable;
     List<String> immutableList = Collections.unmodifiableList(list);
 
  Optional
+
+ Ventajas del uso de este tipo de objetos:
+
+ Seguridad de hilos/subprocesos: los objetos inmutables son inherentemente seguros
+ para subprocesos, por lo que no necesita sincronización cuando se comparten
+ entre varios hilos/subprocesos.
+
+ Almacenamiento en caché y reutilización: dado que su estado no cambia,
+ los objetos inmutables se pueden almacenar en caché y reutilizar
+ sin preocuparse por modificaciones que generen estados inconsistentes.
+
  */
 
 //La clase es final, no puede heredarse.
