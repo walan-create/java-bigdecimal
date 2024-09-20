@@ -70,6 +70,7 @@ public final class ImmutablePerson {
     }
 
     //Se tienen metodos (getters) para acceder a los atributos
+    //nunca metodos (setter) que modifiquen atributos
     public String getName() {
         return name;
     }
