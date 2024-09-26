@@ -6,7 +6,7 @@ import java.math.RoundingMode;
 
 public class Extensiones {
     public static final BigDecimal RADIO_TIERRA_KM = new BigDecimal("6378.0");
-    private static final MathContext mc = new MathContext(34, RoundingMode.HALF_UP); // Precisión Decimal128
+    private static final MathContext mc = new MathContext(34, RoundingMode.HALF_UP);
 
     public static BigDecimal distanciaKm(Posicion posOrigen, Posicion posDestino) {
         BigDecimal difLatitud = enRadianes(new BigDecimal(posDestino.getLatitud()).subtract(new BigDecimal(posOrigen.getLatitud()), mc));

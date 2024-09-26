@@ -11,7 +11,6 @@ public class Ejercicio1 {
         int factorial = 1;
         for (int i=1;num.compareTo(BigDecimal.valueOf(i))>=0;i++){
             factorial=factorial*i;
-            System.out.println(factorial+" = "+" * "+i);
         }
         System.out.println("factorial: "+factorial);
 
